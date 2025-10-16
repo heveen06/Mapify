@@ -1,0 +1,26 @@
+svg {
+  width: 100%;
+  height: auto;
+}
+
+path {
+  fill: #c0c0c0;
+  stroke: #333;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+path:hover {
+  fill: #ff6b6b;
+}
+
+#info-box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  display: none;
+}

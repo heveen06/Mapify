@@ -1,55 +1,91 @@
-<<<<<<< HEAD
-svg {
+.navmenu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wraps;
+  justify-content: center;
+  gap: 4px;
+  color: rgb(40, 168, 5);
+}
+nav a {
+  color: rgb(40, 168, 5);
+  text-decoration: none;
+}
+.title {
+  text-align: center;
+}
+.svg {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  overflow: hidden;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.svg svg {
+  background-color: rgb(53, 184, 255);
   width: 100%;
   height: auto;
+  display: block;
 }
 
-path {
-  fill: #c0c0c0;
-  stroke: #333;
-  cursor: pointer;
-  transition: 0.3s;
+.svg svg g {
+  transform: scale(0.9);
+  transform-origin: top left;
 }
-
 path:hover {
-  fill: #ff6b6b;
+  stroke: green;
+  stroke-width: 2;
+  stroke-dasharray: 4 2;
+}
+@media (max-width: 768px) {
+  .svg {
+    width: 95%; /* take more width on smaller screens */
+    margin: 10px auto; /* smaller margin */
+    padding: 5px;
+  }
+
+  .svg svg g {
+    transform: scale(0.8); /* shrink a bit more for mobile */
+  }
+}
+.color1 {
+  fill: #ffaaa3;
+}
+.color2 {
+  fill: #ffdfba;
+}
+.color3 {
+  fill: #ffffba;
+}
+.color4 {
+  fill: #baf9e2;
+}
+.color5 {
+  fill: #d7baff;
+}
+.color1 {
+  fill: #ffaaa3;
+}
+.color2 {
+  fill: #ffdfba;
+}
+.color3 {
+  fill: #ffffba;
+}
+.color4 {
+  fill: #baf9e2;
+}
+.color5 {
+  fill: #d7baff;
 }
 
-#info-box {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  background: white;
-  padding: 10px 15px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  display: none;
-}
-=======
-svg {
-  width: 100%;
-  height: auto;
-}
-
-path {
-  fill: #c0c0c0;
-  stroke: #333;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
+/* optional hover effect just for interaction */
 path:hover {
-  fill: #ff6b6b;
+  stroke: #555; /* adds an outline on hover */
+  stroke-width: 2;
+  cursor: pointer;
 }
-
-#info-box {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  background: white;
-  padding: 10px 15px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  display: none;
-}
->>>>>>> 47eb19b (added the svg)

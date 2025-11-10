@@ -1,91 +1,94 @@
-.navmenu {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wraps;
-  justify-content: center;
-  gap: 4px;
-  color: rgb(40, 168, 5);
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-nav a {
-  color: rgb(40, 168, 5);
-  text-decoration: none;
+
+body {
+  background-color: #b3e5fc; /* pastel blue sea */
+  font-family: "Poppins", sans-serif;
+  color: #2e7d32; /* deep green for contrast */
 }
-.title {
+
+/* Header container */
+header {
+  background-color: #b3e5fc; /* pastel blue */
+  padding: 20px 0;
   text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
+
+/* Title styling */
+.title {
+  font-size: 3rem;
+  color: #66bb6a; /* pastel green */
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+  letter-spacing: 1px;
+}
+
+/* Navigation menu */
+.navmenu {
+  font-size: 1.2rem;
+  color: #2e7d32; /* deeper green */
+}
+
+/* Navigation links */
+.navmenu .item {
+  color: #388e3c; /* medium green */
+  text-decoration: none;
+  margin: 0 8px;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.navmenu .item:hover {
+  color: #81c784; /* soft green hover */
+}
+
+/* SVG container */
 .svg {
-  width: 90%;
-  max-width: 1200px;
-  margin: 20px auto;
-  overflow: hidden;
-  border: 2px solid #ccc;
-  border-radius: 10px;
-  background-color: #f9f9f9;
-  padding: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  padding: 40px;
 }
 
-.svg svg {
-  background-color: rgb(53, 184, 255);
-  width: 100%;
+/* World map styling */
+#world-map {
+  max-width: 100%;
   height: auto;
-  display: block;
 }
 
-.svg svg g {
-  transform: scale(0.9);
-  transform-origin: top left;
-}
-path:hover {
-  stroke: green;
-  stroke-width: 2;
-  stroke-dasharray: 4 2;
-}
-@media (max-width: 768px) {
-  .svg {
-    width: 95%; /* take more width on smaller screens */
-    margin: 10px auto; /* smaller margin */
-    padding: 5px;
-  }
-
-  .svg svg g {
-    transform: scale(0.8); /* shrink a bit more for mobile */
-  }
-}
-.color1 {
-  fill: #ffaaa3;
-}
-.color2 {
-  fill: #ffdfba;
-}
-.color3 {
-  fill: #ffffba;
-}
-.color4 {
-  fill: #baf9e2;
-}
-.color5 {
-  fill: #d7baff;
-}
-.color1 {
-  fill: #ffaaa3;
-}
-.color2 {
-  fill: #ffdfba;
-}
-.color3 {
-  fill: #ffffba;
-}
-.color4 {
-  fill: #baf9e2;
-}
-.color5 {
-  fill: #d7baff;
-}
-
-/* optional hover effect just for interaction */
-path:hover {
-  stroke: #555; /* adds an outline on hover */
-  stroke-width: 2;
+/* All countries: pastel green */
+#world-map path {
+  fill: #b2f2bb; /* pastel green */
+  stroke: #388e3c;
+  stroke-width: 0.5;
   cursor: pointer;
+  transition: fill 0.3s ease;
+}
+
+/* Hover effect: darker green */
+#world-map path:hover {
+  fill: #81c784; /* soft darker green */
+  filter: brightness(1.05);
+}
+.country-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #b2f2bb; /* pastel green */
+  color: #2e7d32;
+  padding: 16px 24px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  z-index: 9999;
+  transition: opacity 0.3s ease;
+  text-align: center;
+  max-width: 80%;
 }

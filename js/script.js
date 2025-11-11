@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Country info dictionary
 const countryInfo = {
   us: "United States of America — known for its diverse landscapes and iconic cities.",
@@ -44,3 +45,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+=======
+
+// const countries = document.querySelectorAll("path");
+// const colors = ["color1", "color2", "color3", "color4", "color5"];
+
+// countries.forEach((country, i) => {
+//   country.classList.add(colors[i % colors.length]);
+// });
+
+>>>>>>> 4f0b9ba41ae3b36ff4363f1acd5923a8e545a3dc

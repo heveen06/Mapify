@@ -1220,28 +1220,6 @@
     </div>
 
     <footer></footer>
-    <script src="js/script.js">
-            // Example data about countries
-      const countryInfo = {
-        usa: "The United States is located in North America.",
-        canada: "Canada is known for its beautiful landscapes and maple syrup.",
-        mexico: "Mexico is famous for its rich culture and cuisine."
-      };
-
-      // Select all paths inside the SVG
-      const paths = document.querySelectorAll('#worldMap path');
-      const infoBox = document.getElementById('infoBox');
-
-      // Add click listener to each path
-      paths.forEach(path => {
-        path.addEventListener('click', () => {
-          const countryId = path.id; // e.g., 'usa'
-          const info = countryInfo[countryId] || "No info available.";
-          infoBox.textContent = info;
-        });
-      });
-
-      addEventListener(click, info)
-    </script>
+    <script src="js/script.js"></script>
   </body>
 </html>

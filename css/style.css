@@ -41,19 +41,26 @@ header {
 .navmenu .item:hover {
   color: #81c784;
 }
-
+/* Container for the SVG */
 .svg {
   display: flex;
-  justify-content: center;
-  padding: 40px;
+  justify-content: center; /* center horizontally */
+  margin-top: -8%; /* move map up slightly, relative to container height */
+  width: 100%; /* take full width of parent */
+  margin-bottom: 0%;
+  padding-bottom: 0%;
 }
 
-#world-map {
-  max-width: 100%;
-  height: auto;
+/* SVG itself */
+svg {
+  width: 85%; /* scales with container width */
+  height: auto; /* keeps aspect ratio */
+  max-width: 2000px; /* optional: prevents it from getting too huge on large screens */
+  display: block; /* remove flex inside SVG */
 }
 
-#world-map path {
+/* Path styling */
+svg path {
   fill: #b2f2bb;
   stroke: #388e3c;
   stroke-width: 0.5;
@@ -61,7 +68,7 @@ header {
   transition: fill 0.3s ease;
 }
 
-#world-map path:hover {
+svg path:hover {
   fill: #81c784;
   filter: brightness(1.05);
 }
@@ -73,22 +80,6 @@ footer {
 }
 .copyrights {
   margin: 4px;
-}
-
-#info-box {
-  position: fixed;
-  background-color: #b3e5fc;
-  color: #2e7d32; /* deep green text */
-  padding: 16px 24px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  font-family: "Poppins", sans-serif;
-  font-size: 1.2rem;
-  z-index: 9999;
-  transition: opacity 0.3s ease, transform 0.2s ease;
-  text-align: center;
-  max-width: 250px;
-  display: none; /* hidden by default */
 }
 
 #info-box.show {
@@ -112,14 +103,17 @@ footer {
   background: #b3e5fc;
   border: 2px dashed #2e7d32;
   color: #2e7d32;
-  padding: 16px 24px;
+  padding: 8px 20px;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   font-family: "Poppins", sans-serif;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   z-index: 9999;
-  max-width: 450px;
+  width: auto;
+  max-width: 400px;
   display: none;
+  white-space: normal;
+  box-sizing: border-box;
 }
 
 #info-box .popup-content {

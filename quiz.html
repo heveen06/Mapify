@@ -3,9 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mapify Quiz</title>
+
+       <script type="module" src="Quiz.js"></script>
+    <link rel="stylesheet" href="Quiz.css" />
+     <link rel="stylesheet" href="welcome-quiz.css" />
+     <link rel="stylesheet" href="welcome quiz.html" />
 </head>
+
 <body>
-    
+
+
+  <main class="quiz" id="quizBox">
+     
+    </div>
+
+    <img id="flag" alt="Country flag" />
+
+    <div id="options" class="options">
+      <button class="option">Option 1</button>
+      <button class="option">Option 2</button>
+      <button class="option">Option 3</button>
+      <button class="option">Option 4</button>
+    </div>
+
+   
+    <button id="next">Next</button>
+  </main>
+
+
+  <div class="result-box" id="resultBox" style="display: none;">
+    <h2>Quiz Finished</h2>
+    <p id="resultMessage"></p>
+    <a href="quiz.html" class="btn play-again">Start Again</a>
+    <a href="home.html" class="btn end">End</a> <!--WE NEED TO ADD HOME LINK-->
+  </div>
+
 </body>
+
 </html>

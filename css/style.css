@@ -19,7 +19,7 @@ header {
 
 .title {
   font-size: 3rem;
-  color: #66bb6a;
+  color: #2e7d32;
   font-weight: 600;
   margin-bottom: 10px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
@@ -29,6 +29,8 @@ header {
 .navmenu {
   font-size: 1.2rem;
   color: #2e7d32;
+  position: relative;
+  z-index: 999;
 }
 
 .navmenu .item {
@@ -41,25 +43,25 @@ header {
 .navmenu .item:hover {
   color: #81c784;
 }
-/* Container for the SVG */
+
 .svg {
-  display: flex;
-  justify-content: center; /* center horizontally */
-  margin-top: -8%; /* move map up slightly, relative to container height */
-  width: 100%; /* take full width of parent */
+  display:flex;
+  justify-content: center;
+  margin-top: 2%; 
+  width: 100%; 
   margin-bottom: 0%;
   padding-bottom: 0%;
 }
 
-/* SVG itself */
+
 svg {
-  width: 85%; /* scales with container width */
-  height: auto; /* keeps aspect ratio */
-  max-width: 2000px; /* optional: prevents it from getting too huge on large screens */
-  display: block; /* remove flex inside SVG */
+  width: 85%; 
+  height: auto;
+  max-width: 2000px; 
+  display: block; 
 }
 
-/* Path styling */
+
 svg path {
   fill: #b2f2bb;
   stroke: #388e3c;

@@ -4,15 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mapify Quiz</title>
-
-       <script type="module" src="Quiz.js"></script>
-    <link rel="stylesheet" href="Quiz.css" />
-     <link rel="stylesheet" href="welcome-quiz.css" />
-     <link rel="stylesheet" href="welcome quiz.html" />
+    <link rel="stylesheet" href="css/Quiz.css" />
+    <link rel="stylesheet" href="css/welcome-quiz.css" />
 </head>
 
 <body>
+ <header>
+      <h1 class="title">Mapify</h1>
 
+  <nav class="navmenu">
+        <a class="item" href="index.html">Home</a> |
+        <a class="item" href="history.html">History</a> |
+        <a class="item" href="welcome quiz.html">Quiz</a> |
+        <a class="item" href="profile.html">Profile</a> |
+        <a class="item" href="about.html">About</a>
+      </nav>
+      </header>
 
   <main class="quiz" id="quizBox">
      
@@ -36,9 +43,8 @@
     <h2>Quiz Finished</h2>
     <p id="resultMessage"></p>
     <a href="quiz.html" class="btn play-again">Start Again</a>
-    <a href="home.html" class="btn end">End</a> <!--WE NEED TO ADD HOME LINK-->
-  </div>
-
+    <a href="index.html" class="btn end">End</a>   </div>
+<script type="module" src="js/Quiz.js"></script>
 </body>
 
 </html>

@@ -202,3 +202,76 @@ header {
   margin: 5px;
 }
 
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.2rem;
+  }
+
+  .navmenu {
+    font-size: 1rem;
+  }
+
+  .quiz {
+    width: 320px;
+    padding: 20px 25px;
+  }
+
+  #flag {
+    width: 160px;
+    height: 90px;
+  }
+
+  .option {
+    width: 170px;
+    font-size: 13px;
+  }
+
+  .result-box {
+    width: 320px;
+    height: auto;
+    padding: 20px;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .quiz {
+    width: 270px;
+    padding: 18px 20px;
+  }
+
+  .info-box {
+    font-size: 12px;
+  }
+
+  #flag {
+    width: 140px;
+    height: 80px;
+  }
+
+  .option {
+    width: 150px;
+    font-size: 12.5px;
+    padding: 5px;
+  }
+
+  #next {
+    padding: 7px 15px;
+    font-size: 14px;
+  }
+
+  .result-box {
+    width: 270px;
+    padding: 18px;
+  }
+
+  .result-box p {
+    font-size: 14px;
+  }
+}
+

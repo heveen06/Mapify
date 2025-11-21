@@ -152,3 +152,62 @@ footer {
   margin: 2px 0;
   font-size: 1rem;
 }
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .navmenu {
+    font-size: 1rem;
+  }
+
+  .svg {
+    margin-top: 5%;
+  }
+
+  svg {
+    width: 95%;
+    max-width: 100%;
+  }
+
+  #info-box {
+    max-width: 250px;
+    padding: 6px 14px;
+    font-size: 0.8rem;
+  }
+
+  #info-box .popup-sticker {
+    width: 45px;
+    height: 30px;
+  }
+
+  #info-box .popup-text {
+    margin-left: 55px;
+    bottom: 4px;
+    left: 6px;
+  }
+
+  #info-box .popup-text strong {
+    font-size: 1rem;
+  }
+
+  #info-box .popup-text p {
+    font-size: 0.85rem;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.6rem;
+  }
+
+  svg {
+    width: 100%;
+  }
+
+  #info-box {
+    max-width: 200px;
+  }
+}

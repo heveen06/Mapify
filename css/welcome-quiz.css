@@ -103,7 +103,7 @@ header {
 }
 
 .play {
-  background-color: #2ecc71;
+  background-color: #388e3c;
 }
 
 .play:hover {
@@ -120,6 +120,15 @@ header {
   background-color: #2c80b4;
   transform: scale(1.05);
   box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+footer {
+  margin-top:2%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.copyrights {
+  margin: 4px;
 }
 
 @media (max-width: 768px) {

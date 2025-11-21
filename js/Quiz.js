@@ -81,6 +81,10 @@ function showResults() {
   quizBox.style.display = "none";
   resultBox.style.display = "flex";
   resultMessage.textContent = `You finished ${maxQuestions} countries and scored ${score} points!`;
+  let scores = JSON.parse(localStorage.getItem("gameScores") || "[]");
+scores.push(score);
+localStorage.setItem("gameScores", JSON.stringify(scores));
+localStorage.setItem("totalScore", scores.reduce((a, b) => a + b, 0));
 }
 
 

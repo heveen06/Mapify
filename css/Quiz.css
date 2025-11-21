@@ -132,7 +132,7 @@ header {
 
 #next {
   margin-top: 12px;
-  background-color: #7ce77c;
+  background-color:#388e3c ;
   color: white;
   border: none;
   padding: 8px 20px;
@@ -143,11 +143,12 @@ header {
 }
 
 #next:hover {
-  background-color: #5cca5c;
+  background-color: #81c784;
 }
 
 
 .result-box {
+  margin:2%;
   background-color: rgba(255, 255, 255, 0.95);
   width: 400px;
   height: 400px;
@@ -183,7 +184,7 @@ header {
 }
 
 .play-again {
-  background-color: #2ecc71;
+  background-color: #388e3c;
   color: white;
   padding: 8px 20px;
   border-radius: 8px;
@@ -191,7 +192,9 @@ header {
   font-weight: bold;
   margin: 5px;
 }
-
+.result-box a.play-again:hover {
+  background-color: #81c784;
+}
 .home {
   background-color: #3498db;
   color: white;
@@ -200,6 +203,15 @@ header {
   text-decoration: none;
   font-weight: bold;
   margin: 5px;
+}
+footer {
+  margin-top:2%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.copyrights {
+  margin: 4px;
 }
 
 @media (max-width: 768px) {

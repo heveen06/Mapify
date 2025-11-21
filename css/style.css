@@ -79,6 +79,7 @@ footer {
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-top:2%;
 }
 .copyrights {
   margin: 4px;
@@ -153,61 +154,33 @@ footer {
   font-size: 1rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .title {
-    font-size: 2rem;
+    font-size: 2.2rem;
+  }
+
+  svg {
+    width: 95vw;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 1.8rem;
   }
 
   .navmenu {
     font-size: 1rem;
   }
 
-  .svg {
-    margin-top: 5%;
-  }
-
   svg {
-    width: 95%;
+    width: 100vw;
     max-width: 100%;
   }
 
   #info-box {
-    max-width: 250px;
-    padding: 6px 14px;
     font-size: 0.8rem;
-  }
-
-  #info-box .popup-sticker {
-    width: 45px;
-    height: 30px;
-  }
-
-  #info-box .popup-text {
-    margin-left: 55px;
-    bottom: 4px;
-    left: 6px;
-  }
-
-  #info-box .popup-text strong {
-    font-size: 1rem;
-  }
-
-  #info-box .popup-text p {
-    font-size: 0.85rem;
-  }
-}
-
-
-@media (max-width: 480px) {
-  .title {
-    font-size: 1.6rem;
-  }
-
-  svg {
-    width: 100%;
-  }
-
-  #info-box {
-    max-width: 200px;
+    max-width: 300px;
   }
 }

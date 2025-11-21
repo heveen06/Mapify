@@ -3,9 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=\, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mapify | Profile</title>
+    <link rel="stylesheet" href="css/profile.css">
 </head>
 <body>
-    
+    <header>
+      <h1 class="title">Mapify</h1>
+      <nav class="navmenu">
+        <a class="item" href="index.html">Home</a> |
+        <a class="item" href="history.html">History</a> |
+        <a class="item" href="welcome quiz.html">Quiz</a> |
+        <a class="item" href="profile.html">Profile</a> |
+        <a class="item" href="about.html">About</a>
+      </nav>
+    </header>
+    <main>
+  <div class="profile-container">
+
+    <div class="profile-card">
+      <img src="images/personal-flat-icon-free-vector.jpg" class="avatar">
+      
+      <h2 class="username">Joe</h2>
+      <p class="bio">Explorer • Gamer • Student</p>
+
+      <div class="stats">
+        <div class="stat">
+          <strong id="score">0</strong>
+          <span>Game Score</span>
+        </div>
+        <div class="stat">
+          <strong id="rank">#—</strong>
+          <span>World Rank</span>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div class="profile-info">
+      <h3>Your Game Progress</h3>
+      <p>Game score is updated automatically from your quizzes.</p>
+
+      <h3>Badges</h3>
+      <div class="badges">
+  <div class="badge">
+    <img src="images/explorer.png" alt="Explorer Badge">
+    <span>Explorer</span>
+  </div>
+  <div class="badge">
+    <img src="images/gamer.png" alt="Gamer Badge">
+    <span>Gamer</span>
+  </div>
+  <div class="badge">
+    <img src="images/streak.png" alt="Streak Badge">
+    <span>Streak 7 Days</span>
+  </div>
+</div>
+
+      <h3>Account Settings</h3>
+      <ul class="settings">
+        <li id="changeUsername">Change Username</li>
+  <li id="updateEmail">Update Email</li>
+  <li id="deleteAccount">Delete Account</li>
+  <li id="changeAvatar">Change Profile Picture</li>
+      </ul>
+    </div>
+
+  </div>
+</main>
+
+    <footer>
+      <p class="copyrights">© 2025 Mapify. All rights reserved.</p>
+      <p class="copyrights">Built by the TriCode Team.</p>
+    </footer>
+    <script src="js/profile.js"></script>
 </body>
 </html>

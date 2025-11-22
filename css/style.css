@@ -45,10 +45,12 @@ header {
 }
 
 .svg {
+  position: relative;
   display:flex;
   justify-content: center;
   margin-top: 2%; 
   width: 100%; 
+  
   margin-bottom: 0%;
   padding-bottom: 0%;
 }
@@ -80,9 +82,32 @@ footer {
   align-items: center;
   flex-direction: column;
   margin-top:2%;
+  margin-bottom:2%
 }
 .copyrights {
   margin: 4px;
+}
+
+#info-box {
+  position: absolute;
+  background: #b3e5fc;
+  border: 2px dashed #2e7d32;
+  color: #2e7d32;
+  padding: 8px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  z-index: 9999;
+  width: 300px;
+  max-width: 800px;
+  max-height: 80vh;
+  display: none;
+  white-space: normal;
+  box-sizing: border-box;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #info-box.show {
@@ -93,30 +118,6 @@ footer {
 #info-box.hide {
   opacity: 0;
   transform: translate(-50%, -50%) scale(0.95);
-}
-
-#info-box strong {
-  display: block;
-  font-size: 1.3rem;
-  margin-bottom: 6px;
-}
-
-#info-box {
-  position: fixed;
-  background: #b3e5fc;
-  border: 2px dashed #2e7d32;
-  color: #2e7d32;
-  padding: 8px 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  font-family: "Poppins", sans-serif;
-  font-size: 0.9rem;
-  z-index: 9999;
-  width: auto;
-  max-width: 400px;
-  display: none;
-  white-space: normal;
-  box-sizing: border-box;
 }
 
 #info-box .popup-content {
@@ -153,19 +154,33 @@ footer {
   margin: 2px 0;
   font-size: 1rem;
 }
-
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
   .title {
     font-size: 2.2rem;
   }
-
-  svg {
-    width: 95vw;
+  .svg {
+    width: 200%;
+    padding-top:150px;
+  }
+  header {
+    position: fixed;
+    
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #b3e5fc;
+  z-index: 1000;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
   }
 }
 
-
 @media (max-width: 600px) {
+   #info-box {
+    max-width: 90%; 
+    padding: 6px 12px;
+  }
   .title {
     font-size: 1.8rem;
   }
@@ -174,13 +189,24 @@ footer {
     font-size: 1rem;
   }
 
-  svg {
-    width: 100vw;
-    max-width: 100%;
-  }
-
   #info-box {
     font-size: 0.8rem;
     max-width: 300px;
+  }
+    .svg {
+    width: 200%;
+    padding-top:150px;
+  }
+  header {
+    position: fixed;
+    
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #b3e5fc;
+  z-index: 1000;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
   }
 }

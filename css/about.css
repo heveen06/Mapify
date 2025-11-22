@@ -15,8 +15,6 @@ header {
   padding: 20px 0;
   text-align: center;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  width:100%;
-  
 }
 
 .title {
@@ -52,7 +50,7 @@ header {
     color: #2e7d32;
 }
 
-section {
+main section {
     width: 80%;
     max-width: 900px;
     margin: auto;
@@ -60,12 +58,12 @@ section {
     padding: 30px 0;
 }
 
-h2 {
+main h2 {
    color: #2e7d32;
     margin-bottom: 10px;
 }
 
-p {
+main p {
     line-height: 1.6;
 }
 

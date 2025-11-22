@@ -4,13 +4,124 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mapify | History</title>
+    <link rel="stylesheet" href="css/history.css">
+
   </head>
   <body>
+    <header class="header">
+      <h1 class="title">Mapify</h1>
+      <nav class="navmenu">
+        <a class="item" href="index.html">Home</a> |
+        <a class="item" href="history.html">History</a> |
+        <a class="item" href="welcome quiz.html">Quiz</a> |
+        <a class="item" href="profile.html">Profile</a> |
+        <a class="item" href="about.html">About</a>
+      </nav>
+    </header>
     
+      
+
+  <header class="history-header">
+    <h1 class="history-title">Country History</h1>
+    <p class="history-subtitle">Choose a country or open this page from the map</p>
+
+    <div class="history-select-wrapper">
+      <label for="countrySelect" class="visually-hidden">Select Country</label>
+      <select id="countrySelect" class="history-country-select" aria-label="Select Country">
+
+        <option value="">-- Select a Country --</option>
+
+       
+        <optgroup label="Middle East & North Africa">
+          <option value="iraq">Iraq</option>
+          <option value="syria">Syria</option>
+          <option value="turkey">Turkey</option>
+          <option value="iran">Iran</option>
+          <option value="saudiarabia">Saudi Arabia</option>
+          <option value="uae">United Arab Emirates</option>
+          <option value="qatar">Qatar</option>
+          <option value="jordan">Jordan</option>
+          <option value="lebanon">Lebanon</option>
+          <option value="egypt">Egypt</option>
+          <option value="libya">Libya</option>
+          <option value="yemen">Yemen</option>
+          <option value="somalia">Somalia</option>
+          <option value="morocco">Morocco</option>
+        </optgroup>
+
+       
+        <optgroup label="Europe">
+          <option value="uk">United Kingdom</option>
+          <option value="germany">Germany</option>
+          <option value="france">France</option>
+          <option value="italy">Italy</option>
+          <option value="spain">Spain</option>
+          <option value="netherlands">Netherlands</option>
+          <option value="sweden">Sweden</option>
+          <option value="norway">Norway</option>
+          <option value="russia">Russia</option>
+          <option value="ukraine">Ukraine</option>
+          <option value="greece">Greece</option>
+          <option value="switzerland">Switzerland</option>
+        </optgroup>
+
+      
+        <optgroup label="Asia">
+          <option value="china">China</option>
+          <option value="japan">Japan</option>
+          <option value="southkorea">South Korea</option>
+          <option value="india">India</option>
+          <option value="pakistan">Pakistan</option>
+          <option value="afghanistan">Afghanistan</option>
+          <option value="indonesia">Indonesia</option>
+          <option value="malaysia">Malaysia</option>
+          <option value="thailand">Thailand</option>
+          <option value="philippines">Philippines</option>
+        </optgroup>
+
+        <optgroup label="North & South America">
+          <option value="usa">United States</option>
+          <option value="canada">Canada</option>
+          <option value="mexico">Mexico</option>
+          <option value="brazil">Brazil</option>
+          <option value="argentina">Argentina</option>
+          <option value="chile">Chile</option>
+          <option value="colombia">Colombia</option>
+          <option value="peru">Peru</option>
+          <option value="cuba">Cuba</option>
+          <option value="venezuela">Venezuela</option>
+        </optgroup>
+
+       
+        <optgroup label="Africa">
+          <option value="southafrica">South Africa</option>
+          <option value="nigeria">Nigeria</option>
+          <option value="kenya">Kenya</option>
+          <option value="ethiopia">Ethiopia</option>
+          <option value="somalia">Somalia</option>
+          <option value="morocco">Morocco</option>
+        </optgroup>
+
+      </select>
+    </div>
+  </header>
+
+  
+  <main id="history-container" class="history-container" role="main" tabindex="-1">
+   
+  </main>
+
+ 
+
+
+  
+  
     
-  </body>
-  <footer>
+    <footer>
       <p class="copyrights">© 2025 Mapify. All rights reserved.</p>
       <p class="copyrights">Built by the TriCode Team.</p>
     </footer>
+    <script src="js/history.js"></script>
+  </body>
+  
 </html>

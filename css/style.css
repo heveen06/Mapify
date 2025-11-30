@@ -45,24 +45,20 @@ header {
 }
 
 .svg {
-  position: relative;
-  display:flex;
+  display: flex;
   justify-content: center;
-  margin-top: 2%; 
-  width: 100%; 
-  
+  width: 100%;
+  margin-top: 2%;
   margin-bottom: 0%;
   padding-bottom: 0%;
 }
 
-
 svg {
-  width: 85%; 
+  width: 85%;
   height: auto;
-  max-width: 2000px; 
-  display: block; 
+  max-width: 2000px;
+  display: block;
 }
-
 
 svg path {
   fill: #b2f2bb;
@@ -81,8 +77,8 @@ footer {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top:2%;
-  margin-bottom:2%
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 .copyrights {
   margin: 4px;
@@ -154,59 +150,113 @@ footer {
   margin: 2px 0;
   font-size: 1rem;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
   .title {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
   }
-  .svg {
-    width: 200%;
-    padding-top:150px;
-  }
-  header {
-    position: fixed;
-    
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #b3e5fc;
-  z-index: 1000;
-  padding: 20px 0;
-  text-align: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-  }
-}
-
-@media (max-width: 600px) {
-   #info-box {
-    max-width: 90%; 
-    padding: 6px 12px;
-  }
-  .title {
-    font-size: 1.8rem;
-  }
-
   .navmenu {
     font-size: 1rem;
   }
+  svg {
+    width: 95%;
+  }
 
-  #info-box {
-    font-size: 0.8rem;
-    max-width: 300px;
+  footer {
+    padding: 20px 0;
   }
-    .svg {
-    width: 200%;
-    padding-top:150px;
-  }
+}
+
+@media (max-width: 768px) {
   header {
+    padding: 15px 0;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .navmenu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    font-size: 0.95rem;
+  }
+  svg {
+    width: 100%;
+  }
+  
+}
+
+
+@media (max-width: 480px) {
+  header {
+    padding: 15px 0;
     position: fixed;
-    
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #b3e5fc;
-  z-index: 1000;
-  padding: 20px 0;
-  text-align: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    font-size: 2rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .navmenu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    font-size: 0.95rem;
+  }
+
+  .svg {
+    margin-top: 25%;
+    width: 200%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  svg {
+    width: 200%;
+    height: auto;
+    max-width: none;
+    display: block;
+  }
+    #info-box {
+    width: 85%;
+    max-width: none;
+    padding: 6px 12px;
+    font-size: 0.75rem;
+    border-radius: 8px;
+  }
+
+  #info-box .popup-sticker {
+    width: 40px;
+    height: 28px;
+    border-width: 1px;
+  }
+
+  #info-box .popup-text {
+    margin-left: 50px;
+    bottom: 4px;
+    left: 6px;
+  }
+
+  #info-box .popup-text strong {
+    font-size: 0.9rem;
+    margin-bottom: 2px;
+  }
+
+  #info-box .popup-text p {
+    font-size: 0.8rem;
+    margin: 1px 0;
+  }
+  footer {
+    padding: 16px 0;
+    position: fixed;
+    bottom: 100;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
   }
 }
